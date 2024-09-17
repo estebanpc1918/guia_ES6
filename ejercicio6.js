@@ -5,3 +5,4 @@ function IsAmstrong(numeros){
 }
 const resultado = IsAmstrong[153]
 console.log(resultado)
+console.log('hola')
