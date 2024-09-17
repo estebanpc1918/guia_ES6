@@ -5,14 +5,14 @@ const personas = [
     { nombre: 'Laura', edad: 22 }
     ];
 
-const agrup_edad = personas.reduce((acumulador,persona) => {
+const agrup_edad = personas.reduce((acumula,persona) => {
     const{nombre,edad}= persona;
     
-    if(!acumulador[edad]){
-        acumulador[edad]= []
+    if(!acumula[edad]){
+        acumula[edad]= []
     }
-    acumulador[edad].push(nombre);
-    return acumulador
+    acumula[edad].push(nombre);
+    return acumula
 },{})
 
 console.log(agrup_edad)
