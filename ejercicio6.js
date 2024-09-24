@@ -1,8 +1,10 @@
 function IsAmstrong(numeros){
 
-    const digitos = numeros.toString().split('').map(Number);
-    return digitos;
+    const digitos = String(numeros).split('');
+    const numdigital = digitos.length;
+
+    const sum = digitos.reduce((acc,digital) => acc + Math.pow(Number(digital), numdigital),0);
+    return sum === numeros;
+
 }
-const resultado = IsAmstrong[153]
-console.log(resultado)
-console.log('hola')
+console.log(IsAmstrong(153));
